@@ -18,12 +18,15 @@ const changeDescription = (nameCard, text) => {
         if(nameCard === '.git') {
             cardName.innerHTML = ' Git '
         } 
-        if(nameCard === '.responsive') {
-            cardName.innerHTML = ' Responsividade '
+        if(nameCard === '.php') {
+            cardName.innerHTML = ' PHP '
         } 
-        if(nameCard === '.accessibility') {
-            cardName.innerHTML = ' Acessibilidade '
-        } 
+        if(nameCard === '.mysql') {
+            cardName.innerHTML = ' MySQL '
+        }
+        if(nameCard === '.bootstrap') {
+            cardName.innerHTML = ' BootsTrap '
+        }
     })
 
     document.querySelector(nameCard).addEventListener('mouseout', () => {
@@ -53,12 +56,17 @@ changeDescription(
 )
 
 changeDescription(
-    '.responsive',
-    'Responsividade utilizando BreakPoints e propriedades de flexibilização de elementos.'   
+    '.php',
+    'Sites dinâmicos utilizando banco de dados relacionais e PDO'   
 )
 
 changeDescription(
-    '.accessibility',
-    'Boas práticas, como: elementos semânticos, descrição de imagens, níveis de títulos, botões e links.'   
+    '.mysql',
+    'Boas práticas, como: código identado, relacionamento de tabelas e inserção de dados'   
+)
+
+changeDescription(
+    '.bootstrap',
+    'Responsividade em sites dinâmicos, boas práticas de estilização'   
 )
 
